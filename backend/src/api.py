@@ -128,6 +128,9 @@ def create_app(index_dir: str = 'indexes', model_name: str = 'all-MiniLM-L6-v2')
     return app
 
 
+# Export app instance for production (gunicorn)
+app = create_app()
+
 if __name__ == '__main__':
     app = create_app()
     app.run(host='0.0.0.0', port=5000, debug=True)
