@@ -4,30 +4,11 @@ gunicorn>=20.1       # production WSGI server (for Linux hosts)
 waitress>=2.1        # production WSGI server (better on Windows)
 python-dotenv>=1.0
 requests>=2.28
-playwright>=1.35
-
-# Scraping / parsing
-beautifulsoup4>=4.12
-python-dateutil>=2.8
-
-# Testing / dev
-pytest>=7.3
-tox>=4.11
-
-# Fuzzy matching
-rapidfuzz>=2.13
 
 # Embeddings / vectors
 sentence-transformers>=2.2
-transformers>=4.35
-torch>=2.2.0          # CPU/GPU builds; prefer matching your CUDA if using GPU
 numpy>=1.26
-tqdm>=4.65
 
-# FAISS (CPU). On Windows, installing via conda-forge is recommended if pip wheel unavailable:
-# conda install -c conda-forge faiss-cpu
-faiss-cpu>=2.9
-
-# Optional utilities
-uvicorn>=0.22       # ASGI server (if you adapt to FastAPI)
+# FAISS (CPU)
+faiss-cpu==1.13.2
 
