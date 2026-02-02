@@ -1,0 +1,23 @@
+# Backend Requirements - FAISS Search API
+# Semantic search engine with FAISS indexing
+
+# Core dependencies
+Flask>=2.2
+gunicorn>=20.1       # Production WSGI server (Linux)
+waitress>=2.1        # Production WSGI server (Windows)
+python-dotenv>=1.0
+
+# Vector search
+faiss-cpu>=1.7       # FAISS for semantic search (CPU version; use faiss-gpu for GPU)
+sentence-transformers>=2.2  # Embedding models
+
+# Scientific
+numpy>=1.21
+scipy>=1.8
+
+# Utils
+requests>=2.28
+
+# Testing
+pytest>=7.3
+pytest-flask>=1.2
